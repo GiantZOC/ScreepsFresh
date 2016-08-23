@@ -1,0 +1,27 @@
+{
+  "name": "screepsfresh",
+  "version": "1.0.0",
+  "description": "Screeps AI project",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiantZOC/ScreepsFresh.git"
+  },
+  "keywords": [
+    "screeps",
+    "ai"
+  ],
+  "author": "Steven Clipson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GiantZOC/ScreepsFresh/issues"
+  },
+  "homepage": "https://github.com/GiantZOC/ScreepsFresh#readme"
+}
