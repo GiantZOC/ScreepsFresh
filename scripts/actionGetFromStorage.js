@@ -1,3 +1,4 @@
+//get energy from storage
 module.exports = function (creep) {
   require('prototype.Creep')();
   var myStorage = creep.getMyStore();

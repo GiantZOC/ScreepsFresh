@@ -1,3 +1,4 @@
+//shared functions for spawns
 module.exports = function () {
   StructureSpawn.prototype.customCanCreateCreep = function (body) {
       var code = this.canCreateCreep(body);

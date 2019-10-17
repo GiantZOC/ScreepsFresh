@@ -1,5 +1,4 @@
-
-
+//heals damaged creeps
 module.exports = function (creep) {
     require('prototype.Creep');
 

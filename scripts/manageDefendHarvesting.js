@@ -1,3 +1,4 @@
+//create guard creeps if there is a defense flag
 module.exports = function (spawn, maxEnergy){
     var _ = require('lodash');
     var myFlags = Game.flags; // _.filter(Game.flags, {memory: {spawn.name}});

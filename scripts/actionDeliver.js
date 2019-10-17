@@ -1,3 +1,4 @@
+//carry enegy to storage
 module.exports = {
   deliver: function (creep) {
     require('prototype.Creep');

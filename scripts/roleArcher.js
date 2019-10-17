@@ -1,3 +1,4 @@
+//ranged attacking unit
 module.exports = function (creep) {
   require('prototype.Creep')();
     var actionCachedMove = require('actionCachedMove');

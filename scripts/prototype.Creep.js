@@ -1,3 +1,4 @@
+//shared creep functions
 module.exports = function () {
     Creep.prototype.customPathFinder = function (target, range, opts) {
       /*

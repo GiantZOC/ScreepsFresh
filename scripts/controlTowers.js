@@ -1,3 +1,4 @@
+//make towers shoot stuff or heal stuff
 module.exports = function (cpuLog) {
     require('prototype.Room.memory');
     var towers = _.filter(Game.structures, function (structure) {

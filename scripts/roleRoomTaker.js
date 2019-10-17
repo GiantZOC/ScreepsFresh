@@ -1,8 +1,10 @@
+//takes over an uncontrolled room
 module.exports = function (creep) {
     var goBuild = require('goBuild');
     var actionHarvest = require('actionHarvest');
     var getMyConstructionSite = require('getMyConstructionSite');
     var actionCachedMove = require('actionCachedMove');
+    //if there is a staging flag go to it
     if(Game.flags.TakeStaging != null  && (creep.memory.staging == null || creep.memory.staging == false)){
         creep.say('Staging');
         actionCachedMove(creep, 'takeStagingP', Game.flags.TakeStaging, {reusePath: 21, maxOps: 10000});
@@ -12,11 +14,13 @@ module.exports = function (creep) {
             creep.memory.staging = true;
         }
     }
+    //if there is a take flag take the room
     else if(Game.flags.Take != null && creep.room != Game.flags.Take.room){
         creep.say('Flag');
         actionCachedMove(creep, 'takeP', Game.flags.Take, {reusePath: 21, maxOps: 10000});
         creep.moveTo();
     }
+    //if there is a unclaim flag unclaim the room
     else if(Game.flags.Unclaim != null)
     {
         if(creep.room != Game.flags.Unclaim.room){
@@ -31,7 +35,9 @@ module.exports = function (creep) {
         }
     }
     else{
+        //build up the room
         if(creep.room.controller != null && creep.room.controller.my){
+            //harvest
             if(creep.memory.action == 'harvest'){
                 /*
                 if(creep.room.memory.droppedEnergy != null && creep.room.memory.droppedEnergy.length > 0){
@@ -51,6 +57,7 @@ module.exports = function (creep) {
                     creep.say('deliver');
 	            }
             }
+            //start construction
             else{
                 if(getMyConstructionSite(creep) != null) {
                     creep.say('Construction');
@@ -76,7 +83,7 @@ module.exports = function (creep) {
             creep.claimController(creep.room.controller);
             creep.say('Claim');
         }
-
+        //convert room takers into builders once the room gets to level 3
         if(Game.time % 25 == 5 && creep.room.controller != null && creep.room.controller.level > 3 && memory.getRoomSpawns(creep.room).length > 0){
             creep.memory.role = 'builder';
         }

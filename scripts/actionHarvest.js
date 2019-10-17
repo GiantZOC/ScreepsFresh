@@ -1,3 +1,4 @@
+//shared harvest action
 module.exports = function (creep) {
   require('prototype.Creep')();
   var actionCachedMove = require('actionCachedMove');

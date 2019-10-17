@@ -1,3 +1,4 @@
+//cache the creeps movement
 module.exports = function (creep, pathName, target, opts) {
   var currentCPU = Game.cpu.getUsed();
   var profile = false;

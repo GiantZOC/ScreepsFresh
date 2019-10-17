@@ -1,4 +1,6 @@
+//defends the room
 module.exports = {
+  //move to rampart and shoot anything close enough
   defend: function (creep) {
     //var getMyRampart = require('getMyRampart');
     var actionCachedMove = require('actionCachedMove');
@@ -18,7 +20,7 @@ module.exports = {
         creep.say('attack');
     }
   },
-
+  //find closest rampart with an enemy creep
   getMyRampart: function (creep){
     var memoryCreep = require('memoryCreep');
       var myRampart = Game.getObjectById(creep.memory.myRampart);

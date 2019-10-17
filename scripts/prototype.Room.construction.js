@@ -1,3 +1,4 @@
+//shared functions for construction projects
 module.exports = function () {
 
   Room.prototype.construction = function (cpuLog) {

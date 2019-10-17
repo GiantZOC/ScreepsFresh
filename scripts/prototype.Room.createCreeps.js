@@ -1,3 +1,4 @@
+//logic for creating creeps in a room
 module.exports = function () {
   Room.prototype.createCreeps = function () {
       require('prototype.Room.memory');
@@ -18,6 +19,7 @@ module.exports = function () {
       var creepQueue = this.getCreepQueue();
       var buildTime = 0;
 
+      //create creeps in priority order
       this.manageHarvesting(creeps, creepQueue);
       this.createMovers(creeps, extensions.length);
       this.createUpgraders(creeps);

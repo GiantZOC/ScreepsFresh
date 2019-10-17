@@ -1,3 +1,4 @@
+//create keeperkillers if there is a keeper flag
 module.exports = function (spawn, maxEnergy){
     var _ = require('lodash');
     var memoryCreep = require('memoryCreep');   

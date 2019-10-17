@@ -1,3 +1,4 @@
+//constants from the documentation
 module.exports = {
     OK: 0,
     ERR_NOT_OWNER: -1,

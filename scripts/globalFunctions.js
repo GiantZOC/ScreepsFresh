@@ -1,3 +1,4 @@
+//shared global functions
 module.exports = {
 
   //TODO: rewrite to use room and then filter

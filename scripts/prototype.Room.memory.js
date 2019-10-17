@@ -1,3 +1,4 @@
+//shared memory for a room
 module.exports = function () {
   Room.prototype.initialize = function () {
       require('prototype.Spawn')();
@@ -16,7 +17,7 @@ module.exports = function () {
       var sites = this.find(FIND_MY_CONSTRUCTION_SITES);
       var structures = this.find(FIND_STRUCTURES);
       var myStructures = this.find(FIND_MY_STRUCTURES);
-      var droppedEnergy = this.find(FIND_DROPPED_ENERGY);
+      //var droppedEnergy = this.find(FIND_DROPPED_ENERGY);
       var myCreeps = this.find(FIND_MY_CREEPS);
       var damagedCreeps = _.filter(myCreeps, function (creep) {
         return creep.hits < creep.hitsMax;

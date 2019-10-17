@@ -1,3 +1,4 @@
+//shared functions for rooms
 module.exports = function () {
   RoomPosition.prototype.needsWall = function () {
       var structures = this.lookFor(LOOK_STRUCTURES);

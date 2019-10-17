@@ -1,3 +1,4 @@
+//shared functions for Flags
 module.exports = function () {
   Flag.prototype.initialize = function () {
       this.memory.defenderParts = 0;

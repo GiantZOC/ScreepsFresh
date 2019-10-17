@@ -1,3 +1,4 @@
+//designed to kill keeper creeps
 module.exports = function (creep) {
     require('prototype.Creep')();
 

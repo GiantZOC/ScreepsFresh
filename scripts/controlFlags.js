@@ -1,3 +1,4 @@
+//some sort of memory management for flags
 module.exports = {
   mainLoop: function (cpuLog) {
     require('prototype.Flag')();

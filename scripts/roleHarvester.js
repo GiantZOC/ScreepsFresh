@@ -1,3 +1,4 @@
+//harvests energy
 module.exports = function (creep) {
   require('prototype.Creep')();
   var actionHarvest = require('actionHarvest');

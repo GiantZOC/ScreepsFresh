@@ -1,3 +1,4 @@
+//builds structures in the room
 module.exports = function (creep) {
   var actionGetFromStorage = require('actionGetFromStorage');
   var actionBuild = require('actionBuild');

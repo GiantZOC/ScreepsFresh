@@ -1,3 +1,4 @@
+//scouts out rooms to take or attack
 module.exports = function () {
   Creep.prototype.scout = function () {
     require('prototype.Creep')();

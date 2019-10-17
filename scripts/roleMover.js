@@ -1,3 +1,4 @@
+//moves energy from storage into extensions
 module.exports = function (creep) {
   var actionGetFromStorage = require('actionGetFromStorage');
   require('prototype.Creep')();

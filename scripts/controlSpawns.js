@@ -1,3 +1,4 @@
+//create creeps for each spawn
 module.exports = function (cpuLog) {
     var createCreeps = require('createCreeps');
     for(var i in Game.spawns) {

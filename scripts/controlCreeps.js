@@ -1,3 +1,4 @@
+//force the creeps to behave depending on role
 module.exports = function (cpuLog) {
   var roleHarvester = require('roleHarvester');
   var roleBuilder = require('roleBuilder');

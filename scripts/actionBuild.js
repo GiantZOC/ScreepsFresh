@@ -1,3 +1,4 @@
+//build or repair structures
 module.exports = function (creep) {
   require('prototype.Creep')();
   require('prototype.Room.memory')();

@@ -1,3 +1,4 @@
+//manage the room
 module.exports = {
   mainLoop: function (cpuLog) {
     require('prototype.Room.construction')();

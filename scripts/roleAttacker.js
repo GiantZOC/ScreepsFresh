@@ -1,3 +1,4 @@
+//Attacks other rooms
 module.exports = function (creep) {
     require('prototype.Creep')();
     var getHostileTarget = require('getHostileTarget');
